@@ -23,7 +23,7 @@ A fun and challenging lane-dodging game where you drive a TukTuk against traffic
    ```
 
 ### If you want a standalone executable (Windows):
-1. Download the zip file with `tuktuk.exe` (from the `dist/` folder if you built it yourself).
+1. Download the zip file with `tuktuk.exe` (from the `dist/` folder).
 2. Unzip and double-click `tuktuk.exe` to play!
 
 ## Controls
