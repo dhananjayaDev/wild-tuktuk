@@ -88,8 +88,10 @@ def draw_ui():
     level_indicator = pygame.Rect(WINDOW_WIDTH - 30, 10, 20, 20)
     pygame.draw.rect(screen, LEVELS[game_state.level]["color"], level_indicator)
     controls_text = tiny_font.render("H: Honk | M: Music | P: Pause | Q: Quit | R: Restart", True, DARK_GRAY)
-    screen.blit(controls_text, (WINDOW_WIDTH - controls_text.get_width() - 10, 
-                              WINDOW_HEIGHT - controls_text.get_height() - 10))
+    # Place controls hint to the right of the road, with padding
+    controls_x = ROAD_X + ROAD_WIDTH + 20
+    controls_y = WINDOW_HEIGHT - controls_text.get_height() - 20
+    screen.blit(controls_text, (controls_x, controls_y))
 
 def draw_instructions():
     overlay = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT), pygame.SRCALPHA)
