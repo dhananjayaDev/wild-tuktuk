@@ -40,7 +40,7 @@ A fun and challenging lane-dodging game where you drive a TukTuk against traffic
 
 ## Credits
 - Developed with [Pygame](https://www.pygame.org/)
-- TukTuk and car images, and sound effects: (add your sources or "original")
+- TukTuk and car images, and sound effects: [FlatIcon](https://www.flaticon.com/) [Freepik](https://www.freepik.com/) [Pixabay](https://pixabay.com/)
 
 ## Download
 [Download WILD TUKTUK Game](https://github.com/dhananjayaDev/wild-tuktuk/raw/refs/heads/master/dist/Wild-TukTuk.exe)
