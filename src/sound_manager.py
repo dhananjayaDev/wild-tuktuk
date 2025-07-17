@@ -1,6 +1,7 @@
 import pygame
 import os
 from src.constants import SOUNDS
+from src.utils import resource_path
 
 class SoundManager:
     def __init__(self):
@@ -11,11 +12,12 @@ class SoundManager:
         # Load all sounds with error handling
         for name, path in SOUNDS.items():
             try:
-                if os.path.exists(path):
-                    self.sounds[name] = pygame.mixer.Sound(path)
-                    print(f"Loaded sound: {path}")
+                abs_path = resource_path(path)
+                if os.path.exists(abs_path):
+                    self.sounds[name] = pygame.mixer.Sound(abs_path)
+                    print(f"Loaded sound: {abs_path}")
                 else:
-                    print(f"Missing sound file: {path}")
+                    print(f"Missing sound file: {abs_path}")
                     # Create silent fallback
                     silent_sound = pygame.mixer.Sound(buffer=bytes([0]*1024))
                     silent_sound.set_volume(0)

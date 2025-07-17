@@ -22,7 +22,7 @@ spawn_timer = 0
 def init_globals():
     global screen, clock, font, medium_font, small_font, tiny_font, game_state, sound_manager
     screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-    pygame.display.set_caption("Wrong Lane TukTuk - Progressive Levels")
+    pygame.display.set_caption("Wild-TukTuk - Progressive Levels")
     clock = pygame.time.Clock()
     font = pygame.font.SysFont('Arial', 48)
     medium_font = pygame.font.SysFont('Arial', 32)
@@ -97,7 +97,7 @@ def draw_instructions():
     overlay = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT), pygame.SRCALPHA)
     overlay.fill((0, 0, 0, 180))
     screen.blit(overlay, (0, 0))
-    title = medium_font.render("WRONG LANE TUKTUK", True, WHITE)
+    title = medium_font.render("Wild- TUKTUK", True, WHITE)
     screen.blit(title, (WINDOW_WIDTH//2 - title.get_width()//2, 100))
     instructions = [
         "Drive your tuk-tuk against traffic!",

@@ -5,6 +5,7 @@ from src.constants import (
     TUKTUK_WIDTH, TUKTUK_HEIGHT, VEHICLE_WIDTH, VEHICLE_HEIGHT,
     ROAD_X, LANE_WIDTH, WINDOW_HEIGHT, ROAD_WIDTH, GREEN, RED, COLLISION_DISTANCE
 )
+from src.utils import resource_path
 
 class TukTuk:
     def __init__(self):
@@ -21,7 +22,7 @@ class TukTuk:
 
     def load_image(self):
         try:
-            path = os.path.join("assets", "tuktuk.png")
+            path = resource_path(os.path.join("assets", "tuktuk.png"))
             if os.path.exists(path):
                 img = pygame.image.load(path).convert_alpha()
                 return pygame.transform.scale(img, (self.width, self.height))
@@ -59,7 +60,7 @@ class Vehicle:
     def load_image(self):
         try:
             car_num = random.randint(1, 6)
-            path = os.path.join("assets", f"car{car_num:02d}.png")
+            path = resource_path(os.path.join("assets", f"car{car_num:02d}.png"))
             if os.path.exists(path):
                 img = pygame.image.load(path).convert_alpha()
                 return pygame.transform.scale(img, (self.width, self.height))
