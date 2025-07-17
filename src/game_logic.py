@@ -97,7 +97,7 @@ def draw_instructions():
     overlay = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT), pygame.SRCALPHA)
     overlay.fill((0, 0, 0, 180))
     screen.blit(overlay, (0, 0))
-    title = medium_font.render("Wild- TUKTUK", True, WHITE)
+    title = medium_font.render("WILD- TUKTUK", True, WHITE)
     screen.blit(title, (WINDOW_WIDTH//2 - title.get_width()//2, 100))
     instructions = [
         "Drive your tuk-tuk against traffic!",
