@@ -61,7 +61,7 @@ def check_level_progression():
         if game_state.level < 3:
             game_state.level += 1
             game_state.times_reached_top = 0
-            sound_manager.play('win')
+            # Do not play win sound on level up
         else:
             game_state.won = True
             sound_manager.play('win')

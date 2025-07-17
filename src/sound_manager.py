@@ -5,7 +5,7 @@ from src.constants import SOUNDS
 class SoundManager:
     def __init__(self):
         self.sounds = {}
-        self.music_on = False
+        self.music_on = True  # Music is ON by default
         self.environment_on = True
         
         # Load all sounds with error handling
@@ -36,6 +36,9 @@ class SoundManager:
         
         # Start ambient sound
         self.play('environment', loops=-1)
+        # Start music by default
+        if 'music' in self.sounds:
+            self.play('music', loops=-1)
 
     def play(self, sound_name, loops=0):
         if sound_name in self.sounds:

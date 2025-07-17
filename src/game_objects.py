@@ -72,7 +72,8 @@ class Vehicle:
         self.rect.y = self.y
 
     def check_honk(self, tuktuk, sound_manager):
-        if (abs(self.x - tuktuk.x) < 30 and 0 < self.y - tuktuk.y < COLLISION_DISTANCE):
+        # Honk when TukTuk is in front of the vehicle (vehicle is approaching TukTuk)
+        if (abs(self.x - tuktuk.x) < 30 and 0 < tuktuk.y - self.y < COLLISION_DISTANCE):
             current_time = pygame.time.get_ticks()
             if current_time - self.last_honk_time > 2000:  # 2 second cooldown
                 sound_manager.play('vehicle_honk')

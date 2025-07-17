@@ -44,30 +44,33 @@ SOUNDS = {
     'lose': 'assets/sounds/lose.mp3'
 }
 
-# Level configurations
+# Level configurations (updated as per user request)
 LEVELS = {
     1: {
-        "vehicle_speed": BASE_VEHICLE_SPEED,
+        "vehicle_speed": 3,
         "spawn_frequency": 120,
         "vehicles_per_spawn": 2,
         "color": GREEN,
         "min_gap": 150,
-        "required_top_reaches": 3
+        "required_top_reaches": 3,
+        "completion_requirement": "Reach the top of the screen 3 times"
     },
     2: {
-        "vehicle_speed": BASE_VEHICLE_SPEED + 1,
+        "vehicle_speed": 4,
         "spawn_frequency": 80,
         "vehicles_per_spawn": 3,
         "color": YELLOW,
         "min_gap": 120,
-        "required_top_reaches": 5
+        "required_top_reaches": 5,
+        "completion_requirement": "Reach the top of the screen 5 times"
     },
     3: {
-        "vehicle_speed": BASE_VEHICLE_SPEED + 2,
+        "vehicle_speed": 5,
         "spawn_frequency": 50,
         "vehicles_per_spawn": 3,
         "color": RED,
         "min_gap": 90,
-        "required_top_reaches": 999
+        "required_top_reaches": 20,
+        "completion_requirement": "Reach the top of the screen 20 times (win)"
     }
 }
