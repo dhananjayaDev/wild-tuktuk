@@ -1,0 +1,28 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+
+# IDE and editor files
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Pygame specific (if applicable)
+*.log
+build/
+dist/
+
+# Optional: Ignore specific asset files if not sharing (uncomment if needed)
+# assets/sounds/
+# assets/*.png
