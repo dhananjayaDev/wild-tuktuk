@@ -1,3 +1,5 @@
+![Banner](https://github.com/dhananjayaDev/wild-tuktuk/blob/master/assets/banner01.png)
+
 # Wild-TukTuk
 
 A fun and challenging lane-dodging game where you drive a TukTuk against traffic! Dodge vehicles, honk your horn, and progress through increasingly difficult levels.
