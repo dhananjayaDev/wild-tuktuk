@@ -21,7 +21,7 @@ Thumbs.db
 # Pygame specific (if applicable)
 *.log
 build/
-dist/
+# dist/
 
 # Optional: Ignore specific asset files if not sharing (uncomment if needed)
 # assets/sounds/
