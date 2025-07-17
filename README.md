@@ -45,4 +45,7 @@ A fun and challenging lane-dodging game where you drive a TukTuk against traffic
 ## License
 MIT License 
 
+## Download
+[Download WILD TUKTUK Game](https://github.com/dhananjayaDev/wild-tuktuk/blob/master/dist/Wild-TukTuk.exe)
+
 ---
